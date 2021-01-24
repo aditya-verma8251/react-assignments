@@ -3,7 +3,7 @@ import './../App.css'
 
 const userInput = (props) => {
     return (
-        <input className="Input" value={props.initialName} onChange={props.changeName} />        
+        <input type="text" className="Input" value={props.initialName} onChange={props.changeName} />        
     );
 }
 

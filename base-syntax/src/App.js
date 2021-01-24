@@ -7,7 +7,7 @@ class App extends Component {
   state = {
     username: 'Aditya-Verma8251'
   }
-  stateChangeHandler = (event) => {
+  usernameChangedHandler = (event) => {
     this.setState({
       username: event.target.value
     })
@@ -28,7 +28,7 @@ class App extends Component {
           <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</li>
         </ol>
         <div>
-          <UserInput initialName={this.state.username} changeName={this.stateChangeHandler} />
+          <UserInput initialName={this.state.username} changeName={this.usernameChangedHandler} />
           <UserOutput outputText={this.state.username}/>
           {/* <button onClick={this.stateChangeHandler}>Click to change username</button> */}
         </div>
